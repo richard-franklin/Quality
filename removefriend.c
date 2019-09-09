@@ -1,5 +1,5 @@
 #include<stdio.h>
-void delete1(int int);
+void delete1(int n,int a[]);
 void main()
 {
     int t,n,k;

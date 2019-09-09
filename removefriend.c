@@ -1,5 +1,5 @@
 #include<stdio.h>
-int a[1000];
+void delete1(int int);
 void main()
 {
     int t,n,k;
@@ -8,17 +8,18 @@ void main()
     while(i<t)
     {
         scanf("%d%d",&n,&k);
+        int a[n];
         for(int j=0;j<n;j++)
             scanf("%d",&a[j]);
         for(int j=0;j<k;j++)
-            delete(n);
+            delete1(n,a);
         for(int j=0;j<n-k;j++)
             printf("%d ",a[j]);
         printf("\n");
         i++;
     }
 }
-void delete(int n)
+void delete1(int n,int a[])
 {
     int d=0;
     for(int i=0;i<n;i++)

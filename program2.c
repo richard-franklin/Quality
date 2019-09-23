@@ -1,43 +1,25 @@
-/******************************************************************************
-
-                            Online C Compiler.
-                Code, Compile, Run and Debug C program online.
-Write your code in this editor and press "Run" button to compile and execute it.
-
-*******************************************************************************/
-
-#include <stdio.h>
-
-int main()
-{
-    int i,n,j,k,t;
-    scanf("%d",&n);
-    int a[n];
-    for(i=0;i<n;i++)
-        scanf("%d",&a[i]);
-    for(i=0;i<n;i++)
+    #include<stdio.h>
+    int main()
     {
-        for(j=0;j<n-1;j++)
+        int n,i,j;
+        scanf("%d",&n);
+        int a[n],c;
+        for(i=0;i<n;i++)
         {
-            if(a[j]!=0&&a[j+1]!=0)
-            {
-                if(a[j]<a[j+1])
-                    a[j]=0;
-            }
+            scanf("%d",&a[i]);
         }
-        for(k=0;k<n-1;k++)
-        {
-            if(a[k]==0)
-            {
-                t=a[k];
-                a[k]=a[k+1];
-                a[k+1]=t;
+        for(i=0;i<n-1;i++)
+        {   c=0;
+            for(j=i+1;j<n;j++)
+            {  
+                if(a[i]<a[j])
+                {  
+                    c=1;
+                    break;
+                }
             }
+            if(c!=1)
+              printf("%d ",a[i]);
         }
+        printf("%d ",a[n-1]);
     }
-    for(i=0;i<n;i++)
-    {
-        if(a[i]!=0)
-            printf("%d ",a[i]);
-    }
-}

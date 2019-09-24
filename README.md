@@ -58,3 +58,87 @@ Constraints:
 0 <= arr[i] <= 10000
 
 Sample
+# 4. Pink Floyd and Happiness
+
+Pink is sad because of some reasons, he wants to cheer up by listening to some songs 
+from his favorite band, Pink Floyd. 
+ 
+There  are  N  records  and  Pink  will  be  happy  if  he  listens  to  them  in  the  ascending 
+order, i.e., first the song No. 1, then No.2 and so on (He has to listen to all the N songs 
+to become Happy). 
+ 
+Pink is delivered his records in some given order, he can either add the record to the 
+Playlist in the delivered order or put some on another table. After being put on the 
+table only the topmost record can be added to the playlist at any time. 
+ 
+Print whether Pink will be sad or happy after the delivery of the records. 
+ 
+Input Format
+
+N - Number of records followed  by 
+N numbers- order of records. 
+ 
+Output Format 
+
+Print "Happy" if the playlist has songs from 1 to N in order else "Sad". 
+ 
+Constraints 
+
+1<=N<=10^5 
+
+The array consists of 1-N distinct numbers. 
+
+
+ 
+ 
+
+ 
+# 6.Remove Friends    
+After  getting  her  PhD,  Christie  has  become  a  celebrity  at  her  university,  and  her 
+Facebook  profile  is  full  of  friend  requests.  Being  the  nice  girl, 
+she  is,  Christie  has 
+accepted all the requests. 
+ 
+Now Kuldeep is jealous of all the attention she is getting from other guys, so he asks 
+her to delete some of the guys from her friend list. 
+ 
+To avoid a 'scene', Christie decides to remove some friends from her friend list, since 
+she  knows  the  popularity  of  each  of  the  friend  she  has,  she  uses  the  following 
+algorithm to delete a friend. 
+ 
+Algorithm Delete(Friend): 
+    DeleteFriend=false 
+    for i = 1 to Friend.length-1 
+         if (Friend[i].popularity < Friend[i+1].popularity) 
+            delete i th friend 
+            DeleteFriend=true 
+            break 
+    if(DeleteFriend == false) 
+        delete the last friend. 
+ 
+Input Format
+
+First line contains T number of test cases. First line of each test case contains N, the 
+number of friends Christie currently has and K ,the number of friends Christie decides 
+to delete. Next lines contains popularity of her friends separated by space. 
+ 
+Output Format 
+
+For each test case print N-K numbers which represent popularity of Christie friend's 
+after deleting K friends. 
+ 
+Constraints 
+
+1<=T<=1000 
+
+1<=N<=100000 
+
+0<=K< N 
+
+0<=popularity_of_friend<=100 
+ 
+ 
+NOTE: 
+
+Order  of  friends  after  deleting  exactly  K  friends  should  be  maintained  as  given  in 
+input.

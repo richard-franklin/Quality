@@ -57,8 +57,18 @@ Constraints:
 
 0 <= arr[i] <= 10000
 
-Sample
-# 4. Pink Floyd and Happiness
+Sample Input
+
+6
+
+16  17  4  3  5  2
+
+Sample output
+
+17  5  2
+
+
+# 3. Pink Floyd and Happiness
 
 Pink is sad because of some reasons, he wants to cheer up by listening to some songs 
 from his favorite band, Pink Floyd. 
@@ -88,12 +98,20 @@ Constraints
 
 The array consists of 1-N distinct numbers. 
 
+Sample Input
+
+5
+
+1  2  4  3  5
+
+Sample Output
+
+Happy
+ 
+ 
 
  
- 
-
- 
-# 6.Remove Friends    
+# 4.Remove Friends    
 After  getting  her  PhD,  Christie  has  become  a  celebrity  at  her  university,  and  her 
 Facebook  profile  is  full  of  friend  requests.  Being  the  nice  girl, 
 she  is,  Christie  has 
@@ -142,3 +160,27 @@ NOTE:
 
 Order  of  friends  after  deleting  exactly  K  friends  should  be  maintained  as  given  in 
 input.
+
+Sample Input
+
+3
+
+3  1
+
+3  100  1
+
+5  2
+
+19  12  3  4  17
+
+5  3
+
+23  45  11  75  18
+
+Sample Output
+
+100  1
+
+19  12  17
+
+77 18

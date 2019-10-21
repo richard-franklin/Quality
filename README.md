@@ -68,7 +68,7 @@ Sample output
 17  5  2
 
 
-# 3. Pink Floyd and Happiness
+# 4. Pink Floyd and Happiness
 
 Pink is sad because of some reasons, he wants to cheer up by listening to some songs 
 from his favorite band, Pink Floyd. 
@@ -111,7 +111,7 @@ Happy
  
 
  
-# 4.Remove Friends    
+# 6.Remove Friends    
 After  getting  her  PhD,  Christie  has  become  a  celebrity  at  her  university,  and  her 
 Facebook  profile  is  full  of  friend  requests.  Being  the  nice  girl, 
 she  is,  Christie  has 
